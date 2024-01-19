@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phrase-0-matic</title>
+</head>
+<body>
+    <script>
+        //Arrays
+        function makePhrases() {
+            var words1 = ["24/7", "multi-tier", "30,000 foot", "B-to-B", "win-win"];
+            var words2 = ["empowered", "value-added", "oriented", "focused", "aligned"];
+            var words3 = ["process", "solution", "tipping-point", "strategy", "vision"];
+
+            var rand1 = Math.floor(Math.random() * words1.length);
+            var rand2 = Math.floor(Math.random() * words2.length);
+            var rand3 = Math.floor(Math.random() * words3.length);
+
+            var phrase = words1[rand1] + " " + words2[rand2] + " " + words3[rand3];
+
+            alert(phrase);
+            }
+            makePhrases();
+
+            var scores = [60, 50, 60, 58, 54, 54,
+                          58, 50, 52, 54, 48, 69,
+                          34, 55, 51, 52, 44, 51,
+                          69, 64, 66, 55, 52, 61,
+                          46, 31, 57, 52, 44, 18,
+                          41, 53, 55, 61, 51, 44]; //Array literals simply because we're literally writing out what goes in the array
+
+                        for(var i = 0; i < scores.length; i++){
+                            var output="Bubble solution #" + i + " score: " + scores[i];
+                            console.log(output);
+                        }
+
+            var genres = [];
+
+            //Adding items to an array
+
+            genres[0] = ("Jazz")
+            genres.push("Rock");
+            genres.push("Ambient");
+
+            console.log(genres);
+    </script>
+</body>
+</html>
